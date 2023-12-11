@@ -1,7 +1,55 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
 .black-box {
     background-color: black;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
     padding: 20px;
-    text-align: center;
+    box-sizing: border-box;
+}
+
+button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 10px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+#randomBtn {
+    background-color: white;
+    color: black;
+}
+
+#jamBtn {
+    background-color: blue;
+}
+
+button:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.switch {
+    display: inline-block;
+    margin: 0 10px;
 }
 
 .switch {
