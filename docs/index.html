@@ -1,20 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio Player</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Primary Meta Tags -->
+    <title>Sales Jukebox</title>
+    <meta name="title" content="Sales Jukebox" />
+    <meta
+      name="description"
+      content="Listen to some weird stuff that sales people say."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sales-jukebox.kyletaylored.com/" />
+    <meta property="og:title" content="Sales Jukebox" />
+    <meta
+      property="og:description"
+      content="Listen to some weird stuff that sales people say."
+    />
+    <meta property="og:image" content="./img/sales-jukebox.webp" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://sales-jukebox.kyletaylored.com/"
+    />
+    <meta property="twitter:title" content="Sales Jukebox" />
+    <meta
+      property="twitter:description"
+      content="Listen to some weird stuff that sales people say."
+    />
+    <meta property="twitter:image" content="./img/sales-jukebox.webp" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+  </head>
+  <body>
     <div class="black-box">
-        <label class="switch">
-            <input type="checkbox" id="powerSwitch">
-            <span class="slider round"></span>
-        </label>
-        <button id="randomBtn" disabled>R</button>
-        <button id="jamBtn" disabled>J</button>
+      <label class="switch">
+        <input type="checkbox" id="powerSwitch" />
+        <span class="slider round"></span>
+      </label>
+      <button id="randomBtn" disabled>R</button>
+      <button id="jamBtn" disabled>J</button>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
