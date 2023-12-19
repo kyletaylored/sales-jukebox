@@ -6,7 +6,7 @@ document.getElementById('powerSwitch').addEventListener('change', function() {
 
 document.getElementById('randomBtn').addEventListener('click', function() {
     if (document.getElementById('powerSwitch').checked) {
-        var audioFiles = ['audio1.ogg', 'audio2.ogg', 'audio3.ogg']; // replace with actual file names
+        var audioFiles = ['T02RAND0.ogg', 'T02RAND1.ogg', 'T02RAND2.ogg', 'T02RAND3.ogg', 'T02RAND4.ogg', 'T02RAND5.ogg', 'T02RAND6.ogg', 'T02RAND7.ogg', 'T02RAND8.ogg']; // replace with actual file names
         var randomFile = audioFiles[Math.floor(Math.random() * audioFiles.length)];
         var audio = new Audio("./audio/" + randomFile);
         audio.play();
@@ -15,7 +15,7 @@ document.getElementById('randomBtn').addEventListener('click', function() {
 
 document.getElementById('jamBtn').addEventListener('click', function() {
     if (document.getElementById('powerSwitch').checked) {
-        var jamAudio = new Audio('specificAudio.ogg'); // replace with actual file name
+        var jamAudio = new Audio('./audio/T00.ogg'); // replace with actual file name
         jamAudio.play();
     }
 });
